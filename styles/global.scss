@@ -1,8 +1,30 @@
+@import 'mixins.scss';
+@import 'variables.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
 
-* {
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+
+    font-size: 14px;
+    font-family: 'Nuosu SIL', serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @import './nav/nav.scss';
+@import './nav/link-button.scss';
